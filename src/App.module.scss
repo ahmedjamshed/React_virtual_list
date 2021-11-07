@@ -1,0 +1,45 @@
+@import './variables.scss';
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  background-color: $back-color;
+}
+
+.List {
+  width: 50%;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.ListItem {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color: $primary-color;
+  border-radius: 15px;
+  margin: 15px 0px;
+  padding: 10px;
+  h3 {
+    color: $accent-color;
+    margin: 10px;
+  }
+  p {
+    color: #fff;
+    margin: 10px;
+  }
+  img {
+    height: 100px;
+    border: 2px solid $border-dark;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 768px) {
+  .List {
+    width: 95%;
+  }
+}
+
+
